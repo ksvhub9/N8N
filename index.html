@@ -65,7 +65,7 @@
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 5px;
       padding: 12px 25px;
       background: #00bfff;
       color: #fff;
@@ -96,10 +96,6 @@
       font-size: 1.5rem;
       transition: color 0.3s;
       text-decoration: none;
-    }
-
-    .contact a:hover {
-      color: ;
     }
 
     footer {
@@ -140,7 +136,15 @@
       />
       <p><strong>UPI ID:</strong> 8179840530@ybl</p>
       <p><strong>Amount:</strong> ₹50</p>
-      <a href="https://forms.gle/your-google-form-link" target="_blank" class="btn">Complete Registration</a>
+
+      <!-- UPI App Buttons -->
+      <div>
+        <a href="upi://pay?pa=8179840530@ybl&pn=Kumar Sai Vaibhav&am=50&cu=INR" class="btn">Google Pay</a>
+        <a href="upi://pay?pa=8179840530@ybl&pn=Kumar Sai Vaibhav&am=50&cu=INR" class="btn">PhonePe</a>
+        <a href="upi://pay?pa=8179840530@ybl&pn=Kumar Sai Vaibhav&am=50&cu=INR" class="btn">Paytm</a>
+      </div>
+
+      <a href="https://forms.gle/your-google-form-link" target="_blank" class="btn" style="margin-top:15px;">Complete Registration</a>
     </div>
   </section>
 
@@ -167,4 +171,5 @@
   </footer>
 </body>
 </html>
+
 
